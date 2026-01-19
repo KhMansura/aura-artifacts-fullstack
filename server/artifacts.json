@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Ancient Roman Vase",
+    "description": "An authentic golden vase from the late Roman era, perfectly preserved with intricate engravings.",
+    "price": 4500,
+    "image": "https://images.unsplash.com/photo-1578321272176-b7bbc0679853"
+  },
+  {
+    "id": 2,
+    "name": "Vintage Mechanical Typewriter",
+    "description": "A rare 1920s mechanical typewriter. Fully functional and restored for high-end collectors.",
+    "price": 1200,
+    "image": "https://i.ibb.co.com/2YFVz7Bd/download.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Samurai Katana - Edo Period",
+    "description": "Hand-forged steel blade with a traditional silk-wrapped handle from the historic Edo period.",
+    "price": 8900,
+    "image": "https://i.ibb.co.com/4njPW7p0/download.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Egyptian Pharaoh Mask",
+    "description": "A high-quality replica of an 18th Dynasty burial mask, plated in 24k gold leaf.",
+    "price": 15000,
+    "image": "https://i.ibb.co.com/h1st0g9t/download.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Medieval Knight Helmet",
+    "description": "Polished steel great helm used during the 14th century crusades. Includes authentic battle marks.",
+    "price": 3200,
+    "image": "https://i.ibb.co.com/0jGxkmdX/download.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Victorian Pocket Watch",
+    "description": "A silver-engraved mechanical pocket watch with moon phase complications, circa 1890.",
+    "price": 2800,
+    "image": "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5"
+  },
+  {
+    "id": 7,
+    "name": "Renaissance Oil Painting",
+    "description": "Original landscape study from the Italian Renaissance, featuring classical brush techniques.",
+    "price": 22000,
+    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5"
+  },
+  {
+    "id": 8,
+    "name": "Ancient Mayan Sculpture",
+    "description": "Stone-carved deity representation found in the heart of the Yucatan Peninsula ruins.",
+    "price": 7500,
+    "image": "https://i.ibb.co.com/Kz5PNTSb/download.jpg"
+  },
+  {
+    "id": 9,
+    "name": "First Edition Classic Novel",
+    "description": "Rare first printing of a literary masterpiece with original dust jacket and author signature.",
+    "price": 5000,
+    "image": "https://i.ibb.co.com/Tqxc7vDj/download.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Antique Brass Telescope",
+    "description": "Navigational telescope used by maritime explorers in the early 19th century.",
+    "price": 1800,
+    "image": "https://i.ibb.co.com/zh9sRpCf/download.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Fossilized Dinosaur Egg",
+    "description": "A museum-quality Protoceratops egg fossil from the Late Cretaceous period.",
+    "price": 12500,
+    "image": "https://i.ibb.co.com/9HxSM6s0/download.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Persian Silk Carpet",
+    "description": "Hand-knotted silk carpet with 1,200 knots per inch, featuring royal garden motifs.",
+    "price": 9500,
+    "image": "https://i.ibb.co.com/KpFySkNk/images.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Celtic Silver Brooch",
+    "description": "Intricate knotwork design made of solid silver, typical of ancient Scottish nobility.",
+    "price": 950,
+    "image": "https://i.ibb.co.com/C563nT9n/download.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Imperial Chinese Tea Set",
+    "description": "Delicate porcelain set used during the Ming Dynasty, hand-painted with cobalt blue.",
+    "price": 6400,
+    "image": "https://i.ibb.co.com/35NvBKXN/download.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Vintage Film Camera",
+    "description": "Legendary 35mm rangefinder camera known for its iconic lens quality and mechanical precision.",
+    "price": 3500,
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32"
+  },
+  {
+    "id": 16,
+    "name": "Antique Chess Set",
+    "description": "Luxury chess pieces carved from ebony and ivory-style resin, with a marble board.",
+    "price": 2200,
+    "image": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b"
+  }
+]
