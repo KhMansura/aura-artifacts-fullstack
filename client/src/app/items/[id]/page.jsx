@@ -7,7 +7,7 @@ export default function ItemDetails({ params }) {
   const resolvedParams = use(params);
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
-  const baseURL = process.env.NEXTAUTH_URL || "http://localhost:5000";
+  const baseURL = process.env.NEXT_PUBLIC_NEXTAUTH_URL || "http://localhost:5000";
 
   useEffect(() => {
     fetch(`${baseURL}/api/items/${resolvedParams.id}`)

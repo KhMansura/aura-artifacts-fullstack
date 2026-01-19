@@ -5,7 +5,8 @@ import Link from "next/link";
 export default function ItemListPage() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
-  const baseURL = process.env.NEXTAUTH_URL || "http://localhost:5000";
+  const baseURL = process.env.NEXT_PUBLIC_NEXTAUTH_URL;
+  console.log("Base URL:", baseURL);
 
   useEffect(() => {
     fetch(`${baseURL}/api/items`)
