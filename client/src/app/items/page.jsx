@@ -5,9 +5,10 @@ import Link from "next/link";
 export default function ItemListPage() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
+  const baseURL = process.env.NEXTAUTH_URL || "http://localhost:5000";
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/items")
+    fetch(`${baseURL}/api/items`)
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();

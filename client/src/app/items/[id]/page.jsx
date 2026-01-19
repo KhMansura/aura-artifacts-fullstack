@@ -7,9 +7,10 @@ export default function ItemDetails({ params }) {
   const resolvedParams = use(params);
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
+  const baseURL = process.env.NEXTAUTH_URL || "http://localhost:5000";
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/items/${resolvedParams.id}`)
+    fetch(`${baseURL}/api/items/${resolvedParams.id}`)
       .then((res) => res.json())
       .then((data) => {
         setItem(data);
@@ -39,7 +40,7 @@ export default function ItemDetails({ params }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* IMG */}
-          <div className="overflow-hidden rounded-3xl shadow-2xl border border-gray-100">
+          <div className="overflow-hidden rounded-3xl shadow-2xl border border-gray-200">
             <img 
               src={item.image} 
               alt={item.name} 

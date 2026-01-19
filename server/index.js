@@ -8,7 +8,14 @@ const PORT = 5000;
 const DATA_FILE = path.join(__dirname, 'artifacts.json');
 
 // Middleware
-app.use(cors()); 
+// app.use(cors()); 
+app.use(cors({
+  origin: [
+    "http://localhost:3000", 
+    "https://aura-artifacts-fullstack.vercel.app" 
+  ],
+  credentials: true
+}));
 app.use(express.json()); 
 
 if (!fs.existsSync(DATA_FILE)) {
