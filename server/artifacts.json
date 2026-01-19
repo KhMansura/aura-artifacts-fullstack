@@ -110,5 +110,12 @@
     "description": "Luxury chess pieces carved from ebony and ivory-style resin, with a marble board.",
     "price": 2200,
     "image": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b"
+  },
+  {
+    "id": 1768847345654,
+    "name": "Ming Dynasty Vase",
+    "description": "An exquisite blue and white porcelain vase from the Ming Dynasty, featuring intricate hand-painted dragon motifs.",
+    "price": 5000,
+    "image": "https://i.ibb.co.com/xqPnyxBT/download.jpg"
   }
 ]

@@ -26,10 +26,10 @@ export default function Footer() {
 
           
           <div className="flex gap-6 mb-10">
-            <a href="https://github.com/your-username" target="_blank" className="text-slate-100 hover:text-amber-500 font-bold transition-all text-sm uppercase tracking-wider">
+            <a href="https://github.com/KhMansura" target="_blank" className="text-slate-100 hover:text-amber-500 font-bold transition-all text-sm uppercase tracking-wider">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/your-username" target="_blank" className="text-slate-100 hover:text-amber-500 font-bold transition-all text-sm uppercase tracking-wider">
+            <a href="https://www.linkedin.com/in/kh-mansura/" target="_blank" className="text-slate-100 hover:text-amber-500 font-bold transition-all text-sm uppercase tracking-wider">
               LinkedIn
             </a>
           </div>

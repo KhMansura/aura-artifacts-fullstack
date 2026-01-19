@@ -44,15 +44,17 @@ export default function ItemListPage() {
         <h1 className="text-5xl font-extrabold text-center text-amber-400 mb-6 tracking-tight drop-shadow-lg">
           THE AURA ARTIFACTS GALLERY
         </h1>
-        <p className="text-center text-gray-300 mb-16 max-w-3xl mx-auto text-lg leading-relaxed">
-          Step into a realm where history breathes. Discover our meticulously curated collection of rare and authentic artifacts from ancient civilizations to modern marvels.
-        </p>
+        <p className="text-center text-white mb-16 max-w-3xl mx-auto text-xl md:text-2xl font-medium leading-loose drop-shadow-md">
+  Step into a realm where history breathes. Discover our meticulously curated 
+  <span className="text-amber-400 font-bold"> collection of rare and authentic artifacts </span> 
+  from ancient civilizations to modern marvels.
+</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {items.map((item) => (
             <div 
               key={item.id} 
-              className="group bg-gray-900 rounded-3xl overflow-hidden shadow-2xl hover:shadow-amber-500/30 transition-all duration-500 border border-gray-700 flex flex-col h-full transform hover:-translate-y-2 hover:scale-105" // Hover effects for floating look
+              className="group bg-gray-700 rounded-3xl overflow-hidden shadow-2xl hover:shadow-amber-500/30 transition-all duration-500 border border-gray-700 flex flex-col h-full transform hover:-translate-y-2 hover:scale-105" // Hover effects for floating look
             >
               <div className="relative h-64 w-full overflow-hidden rounded-t-2xl">
                 <img 
@@ -65,11 +67,11 @@ export default function ItemListPage() {
                 </div>
               </div>
 
-              <div className="p-7 flex flex-col flex-grow text-gray-200">
-                <h2 className="text-2xl font-bold text-amber-300 mb-2 line-clamp-1">
+              <div className="p-7 flex flex-col flex-grow text-gray-700">
+                <h2 className="text-2xl font-bold text-amber-600 mb-2 line-clamp-1">
                   {item.name}
                 </h2>
-                <p className="text-gray-400 text-base mb-6 line-clamp-3 flex-grow">
+                <p className="text-black text-base mb-6 line-clamp-3 flex-grow">
                   {item.description}
                 </p>
 

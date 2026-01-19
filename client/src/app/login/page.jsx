@@ -161,7 +161,8 @@ export default function LoginPage() {
           onClick={() => signIn("google", { callbackUrl: "/items" })}
           className="w-full bg-white text-gray-900 p-4 rounded-2xl shadow-lg flex items-center justify-center gap-3 hover:bg-gray-100 transition-all font-black text-sm uppercase tracking-wider mb-6 active:scale-95"
         >
-          <img src="https://www.svgrepo.com/show/475656/google-color.svg" className="w-5" alt="Google" />
+          <img src="https://i.ibb.co.com/bMNzwMrB/images.jpg" 
+          className="w-5" alt="Google" />
           Continue with Google
         </button>
 

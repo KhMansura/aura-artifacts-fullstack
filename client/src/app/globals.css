@@ -1,132 +1,71 @@
-/* @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
+/* ১. প্রোপার ডার্ক থিম কালার প্যালেট */
 :root {
-  --background: #ffffff; 
-  --foreground: #111827; 
-  --card-bg: #ffffff;
+  --background: #020617;    /* Deep Navy Black */
+  --foreground: #ffffff;    /* Pure White for visibility */
+  --card-bg: #0f172a;       /* Slightly lighter navy */
+  --accent: #d97706;        /* Amber-600 */
 }
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a; 
-    --foreground: #0f172a; 
-    --card-bg: #1e293b;
-  }
-}
-
+/* ২. বডি এবং ডিফল্ট টেক্সট স্টাইল */
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  transition: background 0.3s, color 0.3s; 
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s, color 0.3s;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--foreground);
+/* ৩. হেডিং এবং প্যারাগ্রাফ কালার ফিক্স */
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--foreground); /* সরাসরি সাদা কালার নিশ্চিত করা */
 }
 
 p {
-  color: var(--foreground);
   opacity: 0.9; 
+  line-height: 1.6;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-@import "tailwindcss";
-
-
+/* ৪. স্নেক বর্ডার অ্যানিমেশন (আপনার রিকোয়ারমেন্ট অনুযায়ী রাখা হলো) */
 @keyframes snake-move {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .snake-border-active {
   animation: snake-move 4s linear infinite !important;
   display: block !important;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  /* Dark Mode focused color palette */
-  --foreground-rgb: 255, 255, 255; /* Pure White text */
-  --background-start-rgb: 2, 6, 23; /* Very Dark Navy/Black */
-  --background-end-rgb: 0, 0, 0; /* Pure Black */
-  --accent-color: #d97706; /* Amber-600 */
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  min-height: 100vh;
-  /* Font smoothing for better accessibility */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Custom Scrollbar for Luxury Dark Look */
+/* ৫. কাস্টম লাক্সারি স্ক্রলবার */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #020617;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d97706; /* Amber scrollbar */
+  background: var(--accent);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f59e0b; /* Lighter Amber on hover */
+  background: #f59e0b;
 }
 
-/* Selection color */
+/* ৬. সিলেকশন কালার */
 ::selection {
-  background-color: #d97706;
+  background-color: var(--accent);
   color: white;
 }
 

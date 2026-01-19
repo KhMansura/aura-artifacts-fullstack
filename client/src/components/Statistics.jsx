@@ -10,7 +10,7 @@ export default function Statistics() {
   ];
 
   return (
-    <section className="py-24 bg-slate-50 border-y border-slate-200 relative overflow-hidden">
+    <section className="py-24 bg-gray-950 border-y relative overflow-hidden">
      
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-amber-200/20 rounded-full blur-[100px]"></div>
       
@@ -23,7 +23,7 @@ export default function Statistics() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group p-8 rounded-[40px] bg-white shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] border border-white hover:border-amber-200 hover:shadow-xl transition-all duration-500 text-center"
+              className="group p-8 rounded-[40px] shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] border border-white hover:border-amber-200 hover:shadow-xl transition-all duration-500 text-center"
             >
               
               <h4 className="text-5xl md:text-6xl font-black text-amber-600 mb-2 tracking-tighter group-hover:text-amber-700 transition-colors">
@@ -36,7 +36,7 @@ export default function Statistics() {
               </p>
               
               {/* Progress Line */}
-              <div className="mt-4 w-12 h-1.5 bg-slate-100 mx-auto rounded-full overflow-hidden">
+              <div className="mt-4 w-12 h-1.5 bg-gray-200 mx-auto rounded-full overflow-hidden">
                 <motion.div 
                   initial={{ width: 0 }}
                   whileInView={{ width: "100%" }}
