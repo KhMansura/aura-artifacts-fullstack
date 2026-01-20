@@ -8,14 +8,14 @@ import Statistics from "@/components/Statistics";
 
 export default function HomePage() {
   return (
-    <main className="bg-white">
+    <main className="bg-[#020617]">
       {/* 1. HERO SECTION */}
       <Hero></Hero>
 
-{/* 2. FEATURED PREVIEW - Animated Border on Hover */}
+{/* 2. FEATURED PREVIEW  */}
 <section className="py-24 bg-gray-950">
   <div className="container mx-auto px-6 text-center">
-    <h2 className="text-4xl font-black mb-16 text-slate-900 tracking-tight">Curated Spotlight</h2>
+    <h2 className="text-4xl font-black mb-16 text-white tracking-tight">Curated Spotlight</h2>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
       {["Ancient Relics", "Medieval Armor", "Vintage Tech"].map((cat) => (
         <div 
@@ -52,7 +52,7 @@ export default function HomePage() {
   </div>
 </section>
 
-{/* 3. ABOUT / HERITAGE - High Contrast & Clean Layout */}
+{/* 3. ABOUT - High Contrast & Clean Layout */}
 <section className="py-24 bg-gray-950 flex flex-col md:flex-row items-center px-6 md:px-20 gap-16 border-y border-gray-800">
   <div className="flex-1 space-y-6">
     <h2 className="text-4xl md:text-5xl font-black text-[#111827] leading-tight">
@@ -83,13 +83,13 @@ export default function HomePage() {
   </div>
 </section>
 
-      {/* 4. STATISTICS - Bright text on Dark */}
+      {/* 4. STATISTICS */}
       <Statistics></Statistics>
 
-      {/* 5. AUTHENTICATION STEPS - Clear icons and text */}
+      {/* 5. AUTHENTICATION STEPS */}
      <AuthenticationSteps />
 
- {/* 6. TESTIMONIALS - High Contrast Luxury Dark Version */}
+ {/* 6. TESTIMONIALS */}
 <section className="py-24 bg-[#020617] px-6 border-y border-gray-800/50 relative overflow-hidden">
   {/* Subtle gradient background for depth */}
   <div className="absolute inset-0 bg-gradient-to-b from-amber-500/5 to-transparent pointer-events-none"></div>
@@ -118,7 +118,7 @@ export default function HomePage() {
   </div>
 </section>
 
-      {/* 7. NEWSLETTER - Professional input fields */}
+      {/* 7. NEWSLETTER  */}
       <Newsletter></Newsletter>
       
     </main>

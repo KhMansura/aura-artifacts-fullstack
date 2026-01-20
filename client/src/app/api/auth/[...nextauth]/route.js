@@ -26,6 +26,9 @@ const handler = NextAuth({
       }
     })
   ],
+  secret: process.env.NEXTAUTH_SECRET || "any-random-string-for-local-dev",
+
+
   callbacks: {
     async signIn({ user, account, profile }) {
       if (account.provider === "google") {
@@ -34,6 +37,9 @@ const handler = NextAuth({
       return true;
     },
     async session({ session, token }) {
+      if (session.user) {
+        session.user.id = token.sub;
+      }
       return session;
     }
   },

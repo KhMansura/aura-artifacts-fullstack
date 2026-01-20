@@ -30,19 +30,18 @@ export async function loginAction(formData) {
   const email = formData.get('email');
   const password = formData.get('password');
 
-  // রিকোয়ারমেন্ট অনুযায়ী হার্ডকোডেড ক্রেডেনশিয়াল
   if (email === "mansura@aura.com" && password === "aura2026") {
     const cookieStore = await cookies();
     
-    // কুকিতে সেশন সেভ করা
+    // save session cookie
     cookieStore.set('aura_session', 'authenticated_123', {
-      httpOnly: true, // সিকিউরিটির জন্য (JS দিয়ে এক্সেস করা যাবে না)
+      httpOnly: true, 
       secure: process.env.NODE_ENV === 'production',
-      maxAge: 60 * 60 * 24, // ১ দিন স্থায়ী হবে
+      maxAge: 60 * 60 * 24, 
       path: '/',
     });
     
-    // লগইন সফল হলে আইটেম লিস্ট পেজে রিডাইরেক্ট
+    
     redirect('/items'); 
   } else {
     return { error: "Invalid email or password!" };

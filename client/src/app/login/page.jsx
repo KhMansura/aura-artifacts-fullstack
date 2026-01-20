@@ -203,14 +203,14 @@ export default function LoginPage() {
         </form>
 
         
-        <div className="mt-8 pt-6 border-t border-gray-800/50 text-center">
+        {/* <div className="mt-8 pt-6 border-t border-gray-800/50 text-center">
           <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">
             Demo Credentials
           </p>
           <p className="text-xs text-amber-500/70 mt-1 font-medium italic">
             User: masa@aura.com | Pass: aura2026
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

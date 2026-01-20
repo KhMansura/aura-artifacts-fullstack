@@ -1,4 +1,3 @@
-
 "use client";
 import { useEffect, useState, use } from "react";
 import Link from "next/link";
@@ -50,7 +49,7 @@ export default function ItemDetails({ params }) {
 
           {/* CONTENT */}
           <div className="flex flex-col justify-center">
-            <h1 className="text-5xl font-black text-gray-900 mb-6 leading-tight">
+            <h1 className="text-5xl font-black text-white mb-6 leading-tight">
               {item.name}
             </h1>
             
@@ -63,7 +62,7 @@ export default function ItemDetails({ params }) {
 
             <div className="bg-gray-800 p-8 rounded-2xl border-l-8 border-amber-500 mb-8 shadow-inner">
               <h3 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Historical Description</h3>
-              <p className="text-gray-700 text-xl leading-relaxed">
+              <p className="text-gray-200 text-xl leading-relaxed">
                 {item.description}
               </p>
             </div>

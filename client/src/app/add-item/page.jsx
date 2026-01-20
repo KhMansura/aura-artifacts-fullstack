@@ -79,13 +79,30 @@
 //   );
 // }
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import toast, { Toaster } from "react-hot-toast";
+import { useSession } from "next-auth/react";
 
 export default function AddItemPage() {
+  const {data: session, status } = useSession();
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      router.push("/login");
+    }
+  }, [status, router]);
+
+  // if (status === "unauthenticated") {
+  //   router.push("/login");
+  // }
+
+  if (status === "loading") {
+    return <div className="text-center py-20">Loading Access...</div>;
+  }
+  if (!session) return null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -100,7 +117,7 @@ export default function AddItemPage() {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/api/items", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_NEXTAUTH_URL || "http://localhost:5000"}/api/items`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(itemData),
@@ -108,8 +125,8 @@ export default function AddItemPage() {
 
       if (res.ok) {
         toast.success("Artifact Added Successfully!");
-        e.target.reset(); // ফর্ম ক্লিয়ার করা
-        setTimeout(() => router.push("/items"), 2000); // ২ সেকেন্ড পর গ্যালারিতে পাঠানো
+        e.target.reset();
+        setTimeout(() => router.push("/items"), 2000); 
       } else {
         toast.error("Failed to add artifact.");
       }

@@ -7,7 +7,6 @@ export default function AuctionRadar() {
   const { status } = useSession();
   const router = useRouter();
 
-  // মক ডাটা অ্যারে
   const upcomingAuctions = [
     { id: 1, name: "Egyptian Sarcophagus", time: "Live in 3 Days", price: "$450k", status: "Premium" },
     { id: 2, name: "Samurai Katana (Edo Period)", time: "Live in 5 Days", price: "$120k", status: "Rare" },

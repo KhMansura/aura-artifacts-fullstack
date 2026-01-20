@@ -67,11 +67,11 @@ export default function ItemListPage() {
                 </div>
               </div>
 
-              <div className="p-7 flex flex-col flex-grow text-gray-700">
+              <div className="p-7 flex flex-col flex-grow text-white">
                 <h2 className="text-2xl font-bold text-amber-600 mb-2 line-clamp-1">
                   {item.name}
                 </h2>
-                <p className="text-black text-base mb-6 line-clamp-3 flex-grow">
+                <p className="text-gray-300 text-base mb-6 line-clamp-3 flex-grow">
                   {item.description}
                 </p>
 

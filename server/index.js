@@ -52,6 +52,7 @@ app.get('/api/items/:id', (req, res) => {
 
 // 3. POST Route: Add a new item (Protected Page)
 app.post('/api/items', (req, res) => {
+    console.log("Received Data:", req.body);
     try {
         const data = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
         
